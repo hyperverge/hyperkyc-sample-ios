@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EE6203EBB4D669E8661A986 /* Pods_hyperkycsample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F297B4B86215BAF78B4CEE25 /* Pods_hyperkycsample.framework */; };
 		AC32DC8A27E044EB00977F47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC32DC8927E044EB00977F47 /* AppDelegate.swift */; };
 		AC32DC8C27E044EB00977F47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC32DC8B27E044EB00977F47 /* SceneDelegate.swift */; };
 		AC32DC8E27E044EB00977F47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC32DC8D27E044EB00977F47 /* ViewController.swift */; };
@@ -16,14 +17,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73FA51C606D4A119A0ADBAAF /* Pods-hyperkycsample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyperkycsample.debug.xcconfig"; path = "Target Support Files/Pods-hyperkycsample/Pods-hyperkycsample.debug.xcconfig"; sourceTree = "<group>"; };
+		7AE9E66BECF37F3A9A98608A /* Pods-hyperkycsample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyperkycsample.release.xcconfig"; path = "Target Support Files/Pods-hyperkycsample/Pods-hyperkycsample.release.xcconfig"; sourceTree = "<group>"; };
 		AC32DC8627E044EB00977F47 /* hyperkycsample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyperkycsample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC32DC8927E044EB00977F47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC32DC8B27E044EB00977F47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC32DC8D27E044EB00977F47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC32DC8D27E044EB00977F47 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC32DC9027E044EB00977F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC32DC9227E044EC00977F47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC32DC9527E044EC00977F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC32DC9727E044EC00977F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F297B4B86215BAF78B4CEE25 /* Pods_hyperkycsample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hyperkycsample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EE6203EBB4D669E8661A986 /* Pods_hyperkycsample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F9C9108E6BF179E3FC43532 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F297B4B86215BAF78B4CEE25 /* Pods_hyperkycsample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC32DC7D27E044EB00977F47 = {
 			isa = PBXGroup;
 			children = (
 				AC32DC8827E044EB00977F47 /* hyperkycsample */,
 				AC32DC8727E044EB00977F47 /* Products */,
+				FDF98FF150221FB945B3ADB7 /* Pods */,
+				3F9C9108E6BF179E3FC43532 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = hyperkycsample;
 			sourceTree = "<group>";
 		};
+		FDF98FF150221FB945B3ADB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73FA51C606D4A119A0ADBAAF /* Pods-hyperkycsample.debug.xcconfig */,
+				7AE9E66BECF37F3A9A98608A /* Pods-hyperkycsample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC32DC9A27E044EC00977F47 /* Build configuration list for PBXNativeTarget "hyperkycsample" */;
 			buildPhases = (
+				E107BF90C5AE68F630CBC1E3 /* [CP] Check Pods Manifest.lock */,
 				AC32DC8227E044EB00977F47 /* Sources */,
 				AC32DC8327E044EB00977F47 /* Frameworks */,
 				AC32DC8427E044EB00977F47 /* Resources */,
+				3CC0BE1880719F9B805B4B60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CC0BE1880719F9B805B4B60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hyperkycsample/Pods-hyperkycsample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hyperkycsample/Pods-hyperkycsample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hyperkycsample/Pods-hyperkycsample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E107BF90C5AE68F630CBC1E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hyperkycsample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC32DC8227E044EB00977F47 /* Sources */ = {
@@ -284,6 +352,7 @@
 		};
 		AC32DC9B27E044EC00977F47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73FA51C606D4A119A0ADBAAF /* Pods-hyperkycsample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +381,7 @@
 		};
 		AC32DC9C27E044EC00977F47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE9E66BECF37F3A9A98608A /* Pods-hyperkycsample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

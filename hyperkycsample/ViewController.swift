@@ -6,14 +6,33 @@
 //
 
 import UIKit
+import HyperKYC
 
 class ViewController: UIViewController {
 
+//    @IBOutlet var btnStartWorkflow: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+    }
+    
+    @IBAction func onStartWorkflow(){
+        startWorkflow()
     }
 
-
+    func startWorkflow(){
+        let workFlow = [HyperKycFlow.document(), HyperKycFlow.face()]
+        let hyperKycConfig = HyperKycConfig(
+            accessToken: "<access-token>", // get accessToken as shown here
+            workFlow: workFlow,
+            transactionId: "<transaction-id>"
+        )
+        
+        HyperKyc.launch(self, hyperKycConfig: hyperKycConfig) { hyperKycResult in
+            print("hyperKycResult: \(hyperKycResult)")
+            // Handle final result here
+        }
+    }
 }
 

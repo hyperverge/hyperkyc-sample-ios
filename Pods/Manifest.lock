@@ -1,0 +1,20 @@
+PODS:
+  - HyperKYC (0.0.5):
+    - HyperSnapSDK
+  - HyperSnapSDK (2.7.6)
+
+DEPENDENCIES:
+  - HyperKYC
+
+SPEC REPOS:
+  trunk:
+    - HyperKYC
+    - HyperSnapSDK
+
+SPEC CHECKSUMS:
+  HyperKYC: 8471b05838b73d4b7682fd6011aa76e68ad23927
+  HyperSnapSDK: a97a7691e39af90dfa221c9bcbdf825fa965ecbf
+
+PODFILE CHECKSUM: 775f038bf50e0a2cfb77bbad2a9c51b13ca96f0d
+
+COCOAPODS: 1.11.2
